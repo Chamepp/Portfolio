@@ -11,14 +11,28 @@ const _hostname = 'localhost';
 // Starting The Server
 
 void main(List<String> args) async {
+  stdout.writeln("Welcome To Ashkans Dart Server");
+  stdout.writeln("EXM: AshDart Start Server -H localhost -P 4444");
+  stdout.writeln("General Commands ===>>> ");
+  stdout.writeln("Start Server");
+  stdout.writeln("Kill Server");
+  stdout.writeln("Option Commands ===>>>");
+  stdout.writeln("-P    Port");
+  stdout.writeln("-H    Host");
+
   // Initializing ...
 
   var init = ArgParser()..addOption('port', abbr: 'p');
   var parser = init.parse(args);
 
+  // User Input and Information
+
+  String userip = stdin.readLineSync();
+  String userport = stdin.readLineSync();
+
   // Port Configurations
 
-  var portvalue = parser['port'] ?? Platform.environment['PORT'] ?? '8080';
+  var portvalue = parser['port'] ?? Platform.environment['PORT'] ?? '$userport';
   var port = int.tryParse(portvalue);
 
   // Port Configuration Fail
@@ -34,14 +48,14 @@ void main(List<String> args) async {
 
   // Handeling Log Requests
 
-  var handler = const shelf.Pipeline()
+  var protocol = const shelf.Pipeline()
       .addMiddleware(shelf.logRequests())
       .addHandler(_echoRequest);
 
   // Setting Configured Credentials To The Server ...
 
-  var server = await io.serve(handler, _hostname, port);
-  print('Serving at http://${server.address.host}:${server.port}');
+  var server = await io.serve(protocol, _hostname, port);
+  print('Started Server at http://${server.address.host}:${server.port}');
 }
 
 // Request Logger

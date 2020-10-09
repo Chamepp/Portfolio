@@ -4,21 +4,19 @@ import 'package:args/args.dart';
 import 'package:shelf/shelf.dart' as shelf;
 import 'package:shelf/shelf_io.dart' as io;
 
-// HostName & IP Configuration
-
 const _hostname = 'localhost';
 
 // Starting The Server
 
 void main(List<String> args) async {
-  stdout.writeln("Welcome To Ashkans Dart Server");
-  stdout.writeln("EXM: AshDart Start Server -H localhost -P 4444");
-  stdout.writeln("General Commands ===>>> ");
-  stdout.writeln("Start Server");
-  stdout.writeln("Kill Server");
-  stdout.writeln("Option Commands ===>>>");
-  stdout.writeln("-P    Port");
-  stdout.writeln("-H    Host");
+  stdout.writeln("Welcome To Ashkans Dart Server \n \n \n");
+  stdout.writeln("EXM: AshDart Start Server -H localhost -P 4444 \n \n");
+  stdout.writeln("General Commands ===>>> \n \n");
+  stdout.writeln("Start Server \n");
+  stdout.writeln("Kill Server \n \n \n");
+  stdout.writeln("Option Commands ===>>> \n \n");
+  stdout.writeln("-P    Port \n");
+  stdout.writeln("-H    Host \n");
 
   // Initializing ...
 
@@ -27,7 +25,9 @@ void main(List<String> args) async {
 
   // User Input and Information
 
+  stdout.writeln("Enter Your Purpose Ip Adress : ");
   String userip = stdin.readLineSync();
+  stdout.writeln("Enter Your Purposal Port : ");
   String userport = stdin.readLineSync();
 
   // Port Configurations

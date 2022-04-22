@@ -1,2 +1,2 @@
 # Portfolio
-Here is my <a href="www.ashkan-ebtekari.com">portfolio</a> website
+Here is my <a href="ashkan-ebtekari.com" target="__block">portfolio</a> website

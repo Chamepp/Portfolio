@@ -21,33 +21,43 @@
       <link rel="stylesheet" href="./style.css">
       <title>Ashkan Ebtekari</title>
    </head>
-   <nav class="navbar">
-      <div class="container">
-         <div class="navbar-header">
-            <a href="#">
-            <img src="./logo.svg" width="300" height="50"></img>
-            </a>
-         </div>
-         
-         <div class="nav-item">
-
-            <!-- NavBar Icon -->
-            <div id="myNav" class="overlay">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-              <div class="overlay-content">
-                <a href="#home_section" onclick="closeNav()">Home</a>
-                <a href="#why_section" onclick="closeNav()">Why</a>
-                <a href="#projects_section" onclick="closeNav()">Projects</a>
-                <a href="#contact_section" onclick="closeNav()">Contact</a>
-              </div>
+   <header>
+      <nav class="navbar">
+         <div class="container">
+            <div class="navbar-header">
+               <a href="#">
+               <img src="./logo.svg" width="300" height="50"></img>
+               </a>
             </div>
-
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">
-               <img src="./menu.png" class="menu-icon" width="25" height="25"></img>
-            </span>
-
-          </div>
-   </nav>
+            <div class="menu" id="myNav">
+               <a href="#" class="closebtn" onclick="closeNav()"><img src="close.svg" alt="close_btn"></a>
+               <div class="page-menu">
+                  <div class="link">
+                     <a href="/" onclick="closeNav()"><span>H</span><span class="Home-span-1">o</span><span>m</span><span class="Home-span-2">e</span></a>
+                     <a href="/articles.html" onclick="closeNav()"><span class="about-span-1">A</span><span>r</span><span class="about-span-2">t</span>i<span class="about-span-2">c</span><span>l</span><span class="about-span-2">e</span><span>s</span></a>
+                     <a href="/talks.html"><span>T</span><span class="social-span-1">a</span><span>l</span><span class="social-span-2">k</span><span>s</span></a>
+                     <a href="/projects.html" onclick="closeNav()"><span class="about-span-1">P</span><span>r</span><span class="about-span-2">o</span>j<span class="about-span-2">e</span><span>c</span><span class="about-span-2">t</span><span>s</span></a>
+                  </div>
+                  <div class="icons-menu">
+                     <a href="https://linkedin.com/in/ashkan-ebtekari" target="_blank">
+                     <img class="social-icons-one" src="linkedin.svg" width="32" height="32">
+                     </a>
+                     <a href="https://github.com/Chamepp" target="_blank">
+                     <img class="social-icons-two" src="github.svg" width="32" height="32">
+                     </a>
+                     <a href="https://ashkan-ebtekari.medium.com" target="_blank">
+                     <img class="social-icons-three" src="medium.svg" width="32" height="32">
+                     </a>
+                     <a href="https://twitter.com/Ashkan__E" target="_blank">
+                     <img class="social-icons-four" src="twitter.svg" width="32" height="32">
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <a href="#" class="menu-link" onclick="openNav()"><img src="menu.png" alt="menu"></a>
+         </div>
+      </nav>
+   </header>
    <body>
       <script type="module" src="/script.js"></script>
       <script type="module" src="./section-transfer.js"></script>
@@ -408,9 +418,108 @@
            $(".loader").fadeOut("slow");
          })
       </script>
-      </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+      <div style="background: #ffffff; height: 600px; color: white; margin-top: 500px;">
+         <img src="vector-one.svg" width="400" height="400" style="margin-left: 100px; margin-right: auto;" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1500" data-aos-anchor-placement="bottom-bottom">
+         <div class="resume-holder" style="display: flex; float: right;">
+            <div class="resume-introduction" style="margin-left: auto; margin-right: 80px;text-align: center;">
+               <i class="icon waves" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1500" data-aos-anchor-placement="center-bottom">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="33" height="7" viewBox="0 0 73.94 14.19">
+                     <polyline points="2.83 2.83 11.36 11.36 19.9 2.83 28.43 11.36 36.97 2.83 45.5 11.36 54.04 2.83 62.58 11.36 71.11 2.83" style="stroke-dashoffset: 2e-05; stroke-dasharray: none;"></polyline>
+                  </svg>
+               </i>
+               <div class="resume-introduction-container" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1500" data-aos-anchor-placement="center-bottom">
+                  <h1 class="intro-header-one">Download</h1>
+                  <h1 class="intro-header-two">Ashkan's</h1>
+                  <h1 class="intro-header-three">Resume</h1>
+                  <h1 class="intro-header-four">.</h1>
+                  <!-- <img class="hand" src="hand.png"></img> -->
+               </div>
+               <p class="resume-intro-paragraph" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1500" data-aos-anchor-placement="bottom-bottom">
+                  With <strong>Software Development</strong>, there is always something new to discover. <strong>Writing</strong> a program <br/>
+                  that is truly helpful to the user is my <strong>Ultimate</strong> goal on every project, and I am delighted by the <br/>
+                  <strong>opportunity</strong> to apply my Knowledge. My background in working with development projects <br/>
+                  has given me the <strong>Skills</strong> to adjust to the changing dynamics and processes of those <br/>
+                  environments while meeting scheduled <strong>Milestones</strong> and <strong>Deliverables</strong>.
+               </p>
+               <div class="button-container" style="display: flex;" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1500" data-aos-anchor-placement="bottom-bottom">
+                  <div style="margin-left: auto; margin-right: auto; display: flex;">
+                     <a href="" class="button">
+                        <ul>
+                           <li>Resume</li>
+                           <li>&#68;ownloading</li>
+                           <li>Downloaded</li>
+                        </ul>
+                        <div>
+                           <svg viewBox="0 0 24 24"></svg>
+                        </div>
+                     </a>
+                     <a href="" class="button">
+                        <ul>
+                           <li>Files</li>
+                           <li>&#68;ownloading</li>
+                           <li>Downloaded</li>
+                        </ul>
+                        <div>
+                           <svg viewBox="0 0 24 24"></svg>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div style="background: #ffffff; height: 600px; color: white;">
+         <div class="resume-holder" style="display: flex;">
+            <div class="resume-introduction" style="margin-left: 80px; margin-right: auto; text-align: center;">
+               <i class="icon waves" data-aos="zoom-in-right" data-aos-duration="3000">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="33" height="7" viewBox="0 0 73.94 14.19">
+                     <polyline points="2.83 2.83 11.36 11.36 19.9 2.83 28.43 11.36 36.97 2.83 45.5 11.36 54.04 2.83 62.58 11.36 71.11 2.83" style="stroke-dashoffset: 2e-05; stroke-dasharray: none;"></polyline>
+                  </svg>
+               </i>
+               <div class="resume-introduction-container" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1500" data-aos-anchor-placement="center-bottom">
+                  <h1 class="intro-header-one">Ashkan's</h1>
+                  <h1 class="intro-header-two">Top</h1>
+                  <h1 class="intro-header-three">Contributions</h1>
+                  <h1 class="intro-header-four">.</h1>
+                  <!-- <img class="hand" src="hand.png"></img> -->
+               </div>
+               <p class="resume-intro-paragraph" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1500" data-aos-anchor-placement="bottom-bottom">
+                  More skills are not the only thing you will gain through contributing! Dedicating time <br />
+                  to help others will teach you patience, kindness, and resilience. Not only will <br />
+                  you improve your communication abilities by working alongside a diverse team <br />
+                  of people, but you will also gain a plethora of other experiences that will <br />
+                  help you as you navigate your future.
+               </p>
+               <div class="button-container" style="display: flex;" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1500" data-aos-anchor-placement="bottom-bottom">
+                  <div style="margin-left: auto; margin-right: auto; display: flex;">
+                     <a href="" class="button">
+                        <ul>
+                           <li>Resume</li>
+                           <li>&#68;ownloading</li>
+                           <li>Downloaded</li>
+                        </ul>
+                        <div>
+                           <svg viewBox="0 0 24 24"></svg>
+                        </div>
+                     </a>
+                     <a href="" class="button">
+                        <ul>
+                           <li>Files</li>
+                           <li>&#68;ownloading</li>
+                           <li>Downloaded</li>
+                        </ul>
+                        <div>
+                           <svg viewBox="0 0 24 24"></svg>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <img src="vector-two.svg" width="400" height="400" style="margin-left: auto; margin-right: 100px;" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1500" data-aos-anchor-placement="bottom-bottom">
+         </div>
+      </div>
       <section class="social-media">
-         <div class="social-header">
+         <div class="social-header" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000" data-aos-anchor-placement="center-bottom">
             <i class="icon waves-two">
                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="7" viewBox="0 0 73.94 14.19">
                   <polyline points="2.83 2.83 11.36 11.36 19.9 2.83 28.43 11.36 36.97 2.83 45.5 11.36 54.04 2.83 62.58 11.36 71.11 2.83" style="stroke-dashoffset: 2e-05; stroke-dasharray: none;"></polyline>
@@ -421,7 +530,7 @@
             </div>
          </div>
          <div class="full__container">
-            <div class="post">
+            <div class="post" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-center">
                <div class="post__content">
                   <div class="top__section">
                      <div class="profile__img"><img src="offensive-security.png" /></div>
@@ -454,7 +563,7 @@
                   </div>
                </div>
             </div>
-            <div class="post">
+            <div class="post" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-center">
                <div class="post__content">
                   <div class="top__section">
                      <div class="profile__img"><img src="github.png" /></div>
@@ -483,7 +592,7 @@
                   </div>
                </div>
             </div>
-            <div class="post">
+            <div class="post" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-center">
                <div class="post__content">
                   <div class="top__section">
                      <div class="profile__img"><img src="crowdstrike.jpeg" /></div>
@@ -514,7 +623,7 @@
                   </div>
                </div>
             </div>
-            <div class="post">
+            <div class="post" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-center">
                <div class="post__content">
                   <div class="top__section">
                      <div class="profile__img"><img src="google.jpeg" /></div>
@@ -546,7 +655,7 @@
                   </div>
                </div>
             </div>
-            <div class="post">
+            <div class="post" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-center">
                <div class="post__content">
                   <div class="top__section">
                      <div class="profile__img"><img src="dribbble.png" /></div>
@@ -578,7 +687,7 @@
                   </div>
                </div>
             </div>
-            <div class="post">
+            <div class="post" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-center">
                <div class="post__content">
                   <div class="top__section">
                      <div class="profile__img"><img src="intel.png" /></div>
@@ -608,7 +717,7 @@
                   </div>
                </div>
             </div>
-            <div class="post">
+            <div class="post" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-center">
                <div class="post__content">
                   <div class="top__section">
                      <div class="profile__img"><img src="forbes.png" /></div>
@@ -637,7 +746,7 @@
                   </div>
                </div>
             </div>
-            <div class="post">
+            <div class="post" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="center-center">
                <div class="post__content">
                   <div class="top__section">
                      <div class="profile__img"><img src="cnn.png" /></div>
@@ -670,75 +779,15 @@
             </div>
          </div>
       </section>
-      </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-
-
-      <div style="background: #ffffff; height: 850px; color: white;">
-         <img src="vector-one.svg" width="400" height="400" style="margin-left: 100px; margin-right: auto;">
-         <div class="resume-holder" style="display: flex; float: right;">
-            <div class="resume-introduction" style="margin-left: auto; margin-right: 80px;text-align: center;">
-               <i class="icon waves">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="33" height="7" viewBox="0 0 73.94 14.19">
-                     <polyline points="2.83 2.83 11.36 11.36 19.9 2.83 28.43 11.36 36.97 2.83 45.5 11.36 54.04 2.83 62.58 11.36 71.11 2.83" style="stroke-dashoffset: 2e-05; stroke-dasharray: none;"></polyline>
-                  </svg>
-               </i>
-               <div class="resume-introduction-container">
-                  <h1 class="intro-header-one">Download</h1>
-                  <h1 class="intro-header-two">Ashkan's</h1>
-                  <h1 class="intro-header-three">Resume</h1>
-                  <h1 class="intro-header-four">.</h1>
-                  <!-- <img class="hand" src="hand.png"></img> -->
-               </div>
-               <p class="resume-intro-paragraph">
-                  With <strong>Software Development</strong>, there is always something new to discover. <strong>Writing</strong> a program <br/>
-                  that is truly helpful to the user is my <strong>Ultimate</strong> goal on every project, and I am delighted by the <br/>
-                  <strong>opportunity</strong> to apply my Knowledge. My background in working with development projects <br/>
-                  has given me the <strong>Skills</strong> to adjust to the changing dynamics and processes of those <br/>
-                  environments while meeting scheduled <strong>Milestones</strong> and <strong>Deliverables</strong>.
-               </p>
-               <div class="button-container" style="display: flex;">
-
-                  <div style="margin-left: auto; margin-right: auto; display: flex;">
-                     <a href="" class="button">
-                        <ul>
-                            <li>Resume</li>
-                            <li>&#68;ownloading</li>
-                            <li>Downloaded</li>
-                        </ul>
-                        <div>
-                            <svg viewBox="0 0 24 24"></svg>
-                        </div>
-                    </a>
-                    <a href="" class="button">
-                     <ul>
-                         <li>Files</li>
-                         <li>&#68;ownloading</li>
-                         <li>Downloaded</li>
-                     </ul>
-                     <div>
-                         <svg viewBox="0 0 24 24"></svg>
-                     </div>
-                 </a>
-                  </div>
-              
-              </div>
-            </div>
-         </div>
-         </div>
-        
-      </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-   </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-
-
       <script>
          function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-
+         document.getElementById("myNav").style.width = "100%";
+         }
+         
+         function closeNav() {
+         document.getElementById("myNav").style.width = "0%";
+         }
+         
       </script>
    </body>
    <section class="start">
@@ -749,7 +798,7 @@ function closeNav() {
             <h3 class="section-sub-title"><span>Book a </span><strong style="color: white;">Zoom</strong><span> Meeting for Discussing </span><strong style="color: white;">Projects</strong><span> and </span><strong style="color: white;">Ideas</strong><span>.</span></h3>
          </div>
          <div class="join-group">
-            <a href="https://threejs-journey.com/join" class="button is-white is-main-join" data-router-disabled="">
+            <a href="https://calendly.com/ashkan-ebtekari/30min" target="_blank" class="button is-white is-main-join" data-router-disabled="">
             <span class="hover"></span>
             <span class="label">Book a Call Now</span>
             </a>
@@ -759,7 +808,7 @@ function closeNav() {
       </div>
    </section>
    <div class="cursor-dot-outline"></div>
-<div class="cursor-dot"></div>
+   <div class="cursor-dot"></div>
    <footer class="footer">
       <div class="inner">
          <div class="column is-logo">
@@ -768,24 +817,9 @@ function closeNav() {
             <div class="column-title">Navigation</div>
             <ul>
                <li><a href="/">Home</a></li>
-               <li><a href="https://threejs-journey.com/login" data-router-disabled="">Login</a></li>
-               <li><a href="https://threejs-journey.com/join" data-router-disabled="">Join</a></li>
-               <li>
-                  <a href="https://threejs-journey.com/gift" data-router-disabled="">
-                     <span class="icon gift">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="61" height="63.96" viewBox="0 0 61 63.96">
-                           <rect y="19.96" width="61" height="11" fill="#898989"></rect>
-                           <path d="M19.77,16H28V9c0-5-9.24-13.34-15.62-6.17S15,16,19.77,16Z" fill="#898989"></path>
-                           <g>
-                              <rect x="5.5" y="34.96" width="20.5" height="29" fill="#898989"></rect>
-                              <rect x="35" y="34.96" width="20.5" height="29" fill="#898989"></rect>
-                           </g>
-                           <path d="M41.41,16H33.17V9c0-5,9.24-13.34,15.62-6.17S46.17,16,41.41,16Z" fill="#898989"></path>
-                        </svg>
-                     </span>
-                     Offer the course
-                  </a>
-               </li>
+               <li><a href="/articles.html" data-router-disabled="">Articles</a></li>
+               <li><a href="/talks.html" data-router-disabled="">Talks</a></li>
+               <li><a href="/projects.html" data-router-disabled="">Projects</a></li>
             </ul>
          </div>
          <div class="column is-navigation">
@@ -793,20 +827,20 @@ function closeNav() {
             <ul>
                <li>
                   <a href="mailto:contact@ashkan-ebtekari.com" target="_blank">
-                  <i class="bi bi-envelope-open-fill"></i>
+                     <i class="bi bi-envelope-fill"></i>
                   contact@ashkan-ebtekari.com
                   </a>
                </li>
                <li>
-                  <a href="https://twitter.com/bruno_simon" target="_blank">
-                  <i class="bi bi-twitter"></i>
-                  Ashkan__E
+                  <a href="https://github.com/Chamepp" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                  Chamepp
                   </a>
                </li>
                <li>
-                  <a href="telegram://send?phone=+98 912 921 2536&text=Hey Ashkan !" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-telegram"></i>
-                  Telegram
+                  <a href="https://twitter.com/Ashkan__E" target="_blank">
+                  <i class="bi bi-twitter"></i>
+                  Ashkan__E
                   </a>
                </li>
             </ul>
@@ -822,11 +856,8 @@ function closeNav() {
          <div class="column is-legal">
             <div class="column-title">Legal</div>
             <ul>
-               <li><a href="https://threejs-journey.com/legal-notice" data-router-disabled="">Legal notice</a></li>
-               <li><a href="https://threejs-journey.com/general-conditions" data-router-disabled="">General Conditions of Sale and Use</a></li>
-               <li><span class="separator"></span></li>
-               <li><a href="https://threejs-journey.com/legal-notice/fr" data-router-disabled="">Mentions légales (fr)</a></li>
-               <li><a href="https://threejs-journey.com/general-conditions/fr" data-router-disabled="">Conditions Générales de Vente et d'Utilisation (fr)</a></li>
+               <li><a href="legal.html" data-router-disabled="">Legal notice - Law Data About Contract</a></li>
+               <li><a href="https://www.google.com/search?q=ashkan+ebtekari&oq=ashkan&aqs=chrome.0.69i59j69i57j35i39j69i60j69i61l2j69i65j69i60.2955j0j7&sourceid=chrome&ie=UTF-8" data-router-disabled="">More</a></li>
             </ul>
          </div>
       </div>

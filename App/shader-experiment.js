@@ -112,7 +112,7 @@ var uniforms = {
 var options = {
 	perlin: {
 		vel: 0.002,
-		speed: 0.00015,
+		speed: 0.00006,
 		perlins: 1.0,
 		decay: 0.25,
 		complex: 0.0,

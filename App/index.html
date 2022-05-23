@@ -26,7 +26,7 @@
          <div class="container">
             <div class="navbar-header">
                <a href="#">
-               <img src="./logo.svg" width="300" height="50"></img>
+               <img src="./logo.svg" class="logo"></img>
                </a>
             </div>
             <div class="menu" id="myNav">
@@ -61,22 +61,22 @@
    <body>
       <script type="module" src="/script.js"></script>
       <script type="module" src="./section-transfer.js"></script>
-      <script type="module" src="./shader-experiment.js"></script>
       <script type="module" src="./cursor.js"></script>
+      <script type="module" src="./shader-experiment.js"></script>
       <script type="module" src="./download-button.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>
          AOS.init();
       </script>
-      <div class="shader-container" id="shader" data-aos="zoom-in" data-aos-duration="3000">
-         <div class="container-fluid shader-header disable-selection">
-            <div>
-               <div style="margin-top: auto; margin-left: auto; color: white; position: absolute; top: 400px; width: 100%; text-align: center; z-index: 100; display:block;">
-                  <h1><strong style="color: white;">Ashkan Ebtekari</strong></h1>
-                  <p href="#" role="button" onclick="cameraSet()">Web Development & Cyber Security</p>
+         <div class="shader-container" id="shader" data-aos="zoom-in" data-aos-duration="3000">
+            <div class="container-fluid shader-header disable-selection">
+               <div>
+                  <div style="margin-top: auto; margin-left: auto; color: white; position: absolute; top: 400px; width: 100%; text-align: center; z-index: 100; display:block;">
+                     <h1><strong style="color: white;">Ashkan Ebtekari</strong></h1>
+                     <p href="#" role="button" onclick="cameraSet()">Web Development & Cyber Security</p>
+                  </div>
                </div>
-            </div>
-         </div>
+         </div>      
          <script id="vertexShader" type="x-shader/x-vertex">
             vec3 mod289(vec3 x)
             {
@@ -351,7 +351,7 @@
                   </h1>
                </div>
             </div>
-            <img src="vector.svg" width="700" height="800" style="float: right; display: flex; margin-left: auto; margin-top: 100px;"></img>
+            <img src="vector.svg" class="vector" style="float: right; display: flex; margin-left: auto; margin-top: 100px;"></img>
          </div>
          <div style="min-height: 100vh; display: flex;" class="slider-holder">
             <div class="blog-slider">
@@ -363,7 +363,7 @@
                      <div class="blog-slider__content">
                         <span class="blog-slider__code">26 December 2021</span>
                         <div class="blog-slider__title">3D Web Roadmap</div>
-                        <div class="blog-slider__text">3D Web Roadmap is an open-source repository which demonstrates the ThreeJs experience path and learning sources. </div>
+                        <div class="blog-slider__text">3D Web Roadmap is an open-source repository which demonstrates the ThreeJs experience path and learning. </div>
                         <a href="https://github.com/Chamepp/3D-Web-Roadmap" target="_blank" class="blog-slider__button">READ MORE</a>
                      </div>
                   </div>
@@ -419,8 +419,8 @@
          })
       </script>
       <div style="background: #ffffff; height: 600px; color: white; margin-top: 500px;">
-         <img src="vector-one.svg" width="400" height="400" style="margin-left: 100px; margin-right: auto;" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1500" data-aos-anchor-placement="bottom-bottom">
          <div class="resume-holder" style="display: flex; float: right;">
+         <img src="vector-one.svg" class="vector-one" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1500" data-aos-anchor-placement="bottom-bottom">
             <div class="resume-introduction" style="margin-left: auto; margin-right: 80px;text-align: center;">
                <i class="icon waves" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1500" data-aos-anchor-placement="center-bottom">
                   <svg xmlns="http://www.w3.org/2000/svg" width="33" height="7" viewBox="0 0 73.94 14.19">
@@ -435,11 +435,12 @@
                   <!-- <img class="hand" src="hand.png"></img> -->
                </div>
                <p class="resume-intro-paragraph" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1500" data-aos-anchor-placement="bottom-bottom">
-                  With <strong>Software Development</strong>, there is always something new to discover. <strong>Writing</strong> a program <br/>
-                  that is truly helpful to the user is my <strong>Ultimate</strong> goal on every project, and I am delighted by the <br/>
-                  <strong>opportunity</strong> to apply my Knowledge. My background in working with development projects <br/>
-                  has given me the <strong>Skills</strong> to adjust to the changing dynamics and processes of those <br/>
-                  environments while meeting scheduled <strong>Milestones</strong> and <strong>Deliverables</strong>.
+                  With <strong>Software Development</strong>, there is always something new to discover. <strong>Writing</strong> <br/>
+                  a program that is truly helpful to the user is my <strong>Ultimate</strong> goal on every project, and I am <br/>
+                  delighted by the <strong>opportunity</strong> to apply my Knowledge. My background in working with <br/>
+                  development projects has given me the <strong>Skills</strong> to adjust to the changing <br/>
+                  dynamics and processes of those environments while meeting scheduled <br />
+                  <strong>Milestones</strong> and <strong>Deliverables</strong>.
                </p>
                <div class="button-container" style="display: flex;" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1500" data-aos-anchor-placement="bottom-bottom">
                   <div style="margin-left: auto; margin-right: auto; display: flex;">
@@ -515,7 +516,7 @@
                   </div>
                </div>
             </div>
-            <img src="vector-two.svg" width="400" height="400" style="margin-left: auto; margin-right: 100px;" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1500" data-aos-anchor-placement="bottom-bottom">
+            <img src="vector-two.svg" class="vector-two" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1500" data-aos-anchor-placement="bottom-bottom">
          </div>
       </div>
       <section class="social-media">

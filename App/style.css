@@ -17,12 +17,37 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden!important;
+	overflow-x: hidden;
 	scroll-behavior: smooth;
 }
 strong {
 	color: black;
 }
+
+.logo {
+	width: 100%;
+	height: auto;
+}
+
+.vector {
+	width: 40%;
+	height: auto;
+}
+
+.vector-one {
+	margin-left: 6.94vw;
+	margin-right: auto;
+	width: 30%;
+	height: auto;
+}
+
+.vector-two {
+	margin-left: auto;
+	margin-right: 6.94vw;
+	width: 30%;
+	height: auto;
+}
+
 .navbar {
 	background-color: white;
 	padding: 0.5rem 1rem;
@@ -49,31 +74,32 @@ strong {
 	display: flex;
 }
 .intro-header-one {
-	font-size: 60px;
+	font-size: 4.16vw;
 	font-family: Gilroy;
 	color: #0025fa;
 }
 .intro-header-two {
 	margin-left: 8px;
 	color: #000000;
-	font-size: 60px;
+	font-size: 4.16vw;
 	font-family: Garamon;
 }
 .intro-header-three {
 	margin-left: 8px;
 	color: #000000;
-	font-size: 60px;
+	font-size: 4.16vw;
 	font-family: Gilroy;
 }
 .intro-header-four {
 	margin-left: 8px;
 	color: #0025fa;
-	font-size: 60px;
+	font-size: 4.16vw;
 	font-family: Gilroy;
 }
 .intro-paragraph {
 	margin-top: 30px;
 	margin-left: 50px;
+	font-size: 1.16vw;
 	font-family: montserrat;
 	color: rgb(124, 124, 124);
 }
@@ -83,26 +109,26 @@ strong {
 }
 .sub-header-one {
 	font-family: Gilroy;
-	font-size: 20px;
+	font-size: 1.38vw;
 	margin-left: 50px;
 	color: #0025fa;
 }
 .sub-header-two {
 	margin-left: 10px;
 	font-family: Gilroy;
-	font-size: 20px;
+	font-size: 1.38vw;
 	color: black;
 }
 .sub-header-three {
 	font-family: Gilroy;
-	font-size: 20px;
+	font-size: 1.38vw;
 	margin-left: 5px;
 	color: #0025fa;
 }
 .hand {
 	width: 50px;
 	height: 50px;
-	margin-left: 20px;
+	margin-left: 1.38vw;
 	margin-top: 10px;
 	animation: hand-waving 8s infinite;
 	transform-origin: 75% 75%;
@@ -187,14 +213,14 @@ hr {
 }
 .blog-slider {
 	width: 95%;
-	position: absolute;
+	position: relative;
 	font-family: Greycliff;
-	max-width: 800px;
-	margin-top: -100px;
-	margin-left: 300px;
+	max-width: 50rem;
+	margin-top: -4.94vw;
+	margin-left: auto;
+	margin-right: auto;
 	background: #fff;
 	box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-	padding: 25px;
 	border-radius: 25px;
 	height: 400px;
 	transition: all 0.3s;
@@ -285,12 +311,12 @@ hr {
 	height: 300px;
 	box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
 	border-radius: 20px;
-	transform: translateX(-80px);
+	transform: translateX(-5.55vw);
 	overflow: hidden;
 }
 .blog-slider__img:after {
 	content: '';
-	position: absolute;
+	position: relative;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -350,13 +376,14 @@ hr {
 	font-weight: 500;
 }
 .blog-slider__title {
-	font-size: 24px;
+	font-size: 1.66vw;
 	font-weight: 700;
 	color: #0d0925;
 	margin-bottom: 20px;
 }
 .blog-slider__text {
 	color: #4e4a67;
+	font-size: 0.9vw;
 	margin-bottom: 30px;
 	line-height: 1.5em;
 }
@@ -372,11 +399,6 @@ hr {
 	justify-content: center;
 	text-align: center;
 	letter-spacing: 1px;
-}
-@media screen and (max-width: 576px) {
-	.blog-slider__button {
-		width: 100%;
-   }
 }
 .blog-slider .swiper-container-horizontal>.swiper-pagination-bullets, .blog-slider .swiper-pagination-custom, .blog-slider .swiper-pagination-fraction {
 	bottom: 10px;
@@ -446,10 +468,11 @@ hr {
 	height: 100%;
 }
 .shader-experiment p {
+	font-size: 3.47vw;
 	color: rgba(255, 255, 255, 0.5) 
 }
 .shader-container h1 {
-	font-size: 50px;
+	font-size: 3.47vw;
 	color: white;
 	font-family: Greycliff;
 }
@@ -481,23 +504,23 @@ hr {
 	text-align: center;
 }
 .social-header-one {
-	font-size: 40px;
+	font-size: 2.77vw;
 	font-family: Gilroy;
 }
 .social-header-two {
-	font-size: 40px;
+	font-size: 2.77vw;
 	font-family: Garamon;
 	margin-left: 10px;
 	display: inline;
 	border-bottom: 3px solid #0025FA;
 }
 .social-header-three {
-	font-size: 40px;
+	font-size: 2.77vw;
 	font-family: Gilroy;
 	margin-left: 10px;
 }
 .social-header-four {
-	font-size: 40px;
+	font-size: 2.77vw;
 	font-family: Gilroy;
 	color: #0025fa;
 }
@@ -1409,7 +1432,7 @@ html {
 }
 .button ul {
 	margin: 0;
-	padding: 16px 40px;
+	padding: 16px 2.77vw;
 	list-style: none;
 	text-align: center;
 	position: relative;
@@ -1612,6 +1635,7 @@ body .button-container .button {
 	margin-top: 30px;
 	margin-left: 50px;
 	font-family: montserrat;
+	font-size: 1.16vw;
 	color: rgb(124, 124, 124);
 }
 body.page-menu {

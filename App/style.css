@@ -1726,3 +1726,29 @@ body.page-menu {
 	padding: 50px 50px;
 	background: #0025FA;
 }
+
+.part-one-section {
+	background: #ffffff;
+	height: 41.66vw;
+	color: white;
+	margin-top: 34.72vw;
+}
+
+.part-two-section {
+	background: #ffffff;
+	height: 41.66vw;
+	color: white;
+	margin-top:  3.47vw;
+}
+
+@media only screen and (max-width: 768px) {
+	.part-one-section {
+		margin-top: 62.72vw;
+	}
+	.part-two-section {
+		margin-top: 30vw;
+	}
+	.vector-one, .vector-two {
+		display: none;
+	}
+}

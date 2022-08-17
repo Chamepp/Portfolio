@@ -32,6 +32,10 @@ strong {
 .vector {
 	width: 40%;
 	height: auto;
+	float: right;
+	display: flex;
+	margin-left: auto;
+	margin-top: 100px;
 }
 
 .vector-one {
@@ -44,6 +48,18 @@ strong {
 .vector-two {
 	margin-left: auto;
 	margin-right: 6.94vw;
+	width: 30%;
+	height: auto;
+}
+
+.vector-one-response {
+	display: none;
+	width: 30%;
+	height: auto;
+}
+
+.vector-two-response {
+	display: none;
 	width: 30%;
 	height: auto;
 }
@@ -498,8 +514,26 @@ hr {
 	stroke: #0025fa;
 	stroke-width: 5px;
 }
+.waves-section {
+	margin-left: 50px;
+}
+.waves-section svg {
+	width: 80px;
+	height: 40px;
+}
+@media (min-width: 1600px) {
+	.waves-section svg {
+		width: 70px;
+		height: 15px;
+   }
+}
+.waves-section svg > * {
+	fill: none;
+	stroke: #0025fa;
+	stroke-width: 5px;
+}
 .social-header {
-	width: 1000px;
+	width: 69.44vw;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -1600,9 +1634,19 @@ body .button-container .button {
 		margin: 12px;
    }
 }
-.resume-introduction {
+.resume-introduction-one {
 	margin-top: auto;
 	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: 80px;
+	text-align: center;
+}
+.resume-introduction-two {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 80px;
+	margin-right: auto;
+	text-align: center;
 }
 .resume-introduction-container {
 	margin-left: 50px;
@@ -1741,14 +1785,129 @@ body.page-menu {
 	margin-top:  3.47vw;
 }
 
+.resume-holder-one {
+	display: flex;
+	float: right;
+}
+
+.resume-holder-two {
+	display: flex;
+	float: right;
+}
+
+.shader-header {
+	margin-top: auto;
+	margin-left: auto;
+	color: white;
+	position: absolute;
+	top: 27.777vw;
+	width: 100%;
+	text-align: center;
+	z-index: 100;
+	display: block;
+}
+
 @media only screen and (max-width: 768px) {
 	.part-one-section {
-		margin-top: 62.72vw;
+		margin-top: 100vw;
 	}
 	.part-two-section {
 		margin-top: 30vw;
 	}
 	.vector-one, .vector-two {
 		display: none;
+	}
+	.resume-introduction-one {
+		margin-left: 0px;
+		margin-right: 0px;
+
+	}
+	.resume-introduction-two {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.resume-holder-one, .resume-holder-two {
+		float: none;
+		display: block;
+	}
+	.waves-section {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+	.resume-introduction-container {
+		margin-left: 50px;
+		display: flex;
+	}
+	.resume-intro-paragraph {
+		margin-top: 10px;
+		margin-left: 0px;
+		font-family: montserrat;
+		font-size: 2.16vw;
+		color: rgb(124, 124, 124);
+	}
+	.intro-header-one {
+		font-size: 6.16vw;
+		font-family: Gilroy;
+		color: #0025fa;
+	}
+	.intro-header-two {
+		margin-left: 8px;
+		color: #000000;
+		font-size: 6.16vw;
+		font-family: Garamon;
+	}
+	.intro-header-three {
+		margin-left: 8px;
+		color: #000000;
+		font-size: 6.16vw;
+		font-family: Gilroy;
+	}
+	.intro-header-four {
+		margin-left: 8px;
+		color: #0025fa;
+		font-size: 6.16vw;
+		font-family: Gilroy;
+	}
+	.vector-one-response {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 300px;
+	}
+	.vector-two-response {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 300px;
+	}
+	.social-header {
+		margin-top: 300px;
+	}
+	.social-header-one, .social-header-two, .social-header-three, .social-header-four {
+		font-size: 4.77vw;
+	}
+	.blog-slider__title {
+		font-size: 3.66vw;
+	}
+	.blog-slider__text {
+		font-size: 2.9vw;
+	}
+	.vector {
+		display: none;
+	}
+	.intro-header-one, .intro-header-two, .intro-header-three, .intro-header-four {
+		font-size: 7vw;
+	}
+	.intro-paragraph {
+		font-size: 3vw;
+	}
+	.shader-experiment p {
+		font-size: 5.47vw;
+		color: rgba(255, 255, 255, 0.5) 
+	}
+	.shader-container h1 {
+		font-size: 5.47vw;
+		color: white;
+		font-family: Greycliff;
 	}
 }

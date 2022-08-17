@@ -14,10 +14,35 @@ function init() {
 var scene, camera, renderer, container;
 var _width, _height;
 var mat;
+var zoom_amount;
+
+if (window.innerWidth < 3000 && window.innerHeight < 3000) {
+	zoom_amount = 5.6
+	console.log("------ Happy Resizing ! ------")
+}
+if (window.innerWidth < 1500 && window.innerHeight < 1500) {
+	zoom_amount = 7
+	console.log("------ Happy Resizing ! ------")
+}
+if (window.innerWidth < 1000 && window.innerHeight < 1000) {
+	zoom_amount = 15
+	console.log("------ Happy Resizing ! ------")
+}
+if (window.innerWidth < 500 && window.innerHeight < 500) {
+	zoom_amount = 30
+	console.log("------ Happy Resizing ! ------")
+}
+if (window.innerWidth < 300 && window.innerHeight < 300) {
+	zoom_amount = 60
+	console.log("------ Happy Resizing ! ------")
+} else {
+	console.log("------ Err ------")
+}
 
 function createWorld() {
 	_width = window.innerWidth;
 	_height = window.innerHeight;
+
 	//---
 	scene = new THREE.Scene();
 	scene.fog = new THREE.Fog(0x000000, 5, 15);
@@ -41,8 +66,8 @@ function createWorld() {
 function onWindowResize() {
 	_width = window.innerWidth;
 	_height = window.innerHeight;
-	renderer.setSize(_width, _height);
-	camera.aspect = _width / _height;
+	renderer.setSize(_height, _width);
+	camera.aspect = _height / _width;
 	camera.updateProjectionMatrix();
 	console.log('- resize -');
 }
@@ -127,7 +152,7 @@ var options = {
 		b_color: 1.32
 	},
 	cam: {
-		zoom: 4.6
+		zoom: zoom_amount
 	}
 }
 

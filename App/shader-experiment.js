@@ -16,27 +16,25 @@ var _width, _height;
 var mat;
 var zoom_amount;
 
-if (window.innerWidth < 3000 && window.innerHeight < 3000) {
+if (window.innerWidth < 3000) {
 	zoom_amount = 5.6
 	console.log("------ Happy Resizing ! ------")
 }
-if (window.innerWidth < 1500 && window.innerHeight < 1500) {
+if (window.innerWidth < 1500) {
 	zoom_amount = 7
 	console.log("------ Happy Resizing ! ------")
 }
-if (window.innerWidth < 1000 && window.innerHeight < 1000) {
+if (window.innerWidth < 1000) {
+	zoom_amount = 10
+	console.log("------ Happy Resizing ! ------")
+}
+if (window.innerWidth < 500) {
 	zoom_amount = 15
 	console.log("------ Happy Resizing ! ------")
 }
-if (window.innerWidth < 500 && window.innerHeight < 500) {
+if (window.innerWidth < 300) {
 	zoom_amount = 30
 	console.log("------ Happy Resizing ! ------")
-}
-if (window.innerWidth < 300 && window.innerHeight < 300) {
-	zoom_amount = 60
-	console.log("------ Happy Resizing ! ------")
-} else {
-	console.log("------ Err ------")
 }
 
 function createWorld() {
@@ -56,20 +54,12 @@ function createWorld() {
 		alpha: true
 	});
 	renderer.setSize(_width, _height);
+	camera.aspect = _width / _height;
+	camera.updateProjectionMatrix();
 	renderer.shadowMap.enabled = true;
 	//---
 	document.getElementById("shader").appendChild(renderer.domElement);
 	//---
-	window.addEventListener('resize', onWindowResize, false);
-}
-
-function onWindowResize() {
-	_width = window.innerWidth;
-	_height = window.innerHeight;
-	renderer.setSize(_height, _width);
-	camera.aspect = _height / _width;
-	camera.updateProjectionMatrix();
-	console.log('- resize -');
 }
 //--------------------------------------------------------------------
 var _ambientLights, _lights;

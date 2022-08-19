@@ -630,3 +630,85 @@ section.start .join-group .gift .gift-icon svg * {
 .page-description a:hover {
 	color: #0025fa;
 }
+
+
+
+
+.timeline-container {
+  background: white;
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.rightbox {
+  padding: 0em 84rem 0em 0em;
+  height: 100%;
+}
+
+.rb-container {
+  font-family: 'Gilroy';
+  width: 50%;
+  margin: auto;
+  display: block;
+  position: relative;
+}
+
+.rb-container ul.rb {
+  margin: 2.5em 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.rb-container ul.rb li {
+  list-style: none;
+  margin: auto;
+  margin-left: 10em;
+  min-height: 50px;
+  border-left: 1px dashed rgb(0, 0, 0);
+  padding: 0 0 50px 30px;
+  position: relative;
+}
+
+.rb-container ul.rb li:last-child {
+  border-left: 0;
+}
+
+.rb-container ul.rb li::before {
+  position: absolute;
+  left: -18px;
+  top: -5px;
+  content: " ";
+  border: 8px solid #0025fa;
+  border-radius: 500%;
+  background: #00006E;
+  height: 35px;
+  width: 35px;
+  transition: all 500ms ease-in-out;
+}
+
+.rb-container ul.rb li:hover::before {
+  border-color: #ffffff;
+  background: #0025fa;
+  transition: all 800ms ease-in-out;
+}
+
+ul.rb li .timestamp {
+  color: black;
+  position: relative;
+  width: 600px;
+  font-size: 12px;
+}
+
+.item-title {
+  color: #0025fa;
+}
+
+.container-3 {
+  width: 5em;
+  vertical-align: right;
+  white-space: nowrap;
+  position: absolute;
+}
+

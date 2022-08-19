@@ -53,7 +53,7 @@ body.page-menu {
 .menu-link img {
 	display: flex;
 	float: right;
-	position: relative;
+	position: absolute;
 	width: 30px;
 	height: 30px;
 	text-decoration: none;
@@ -133,14 +133,20 @@ body.page-menu {
     text-align: center;
 }
 
-.page-banner h1 {
+.page-banner span {
     position: relative;
     top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
+	font-size: 5vw;
     font-family: Gilroy;
-    color: #0025fa;
+}
+
+.page-header-one, .page-header-three, .page-header-five, .page-header-seven {
+	color: #0025fa;
+}
+.page-header-two, .page-header-four, .page-header-six {
+	color: #00006E;
 }
 
 .page-description {
@@ -711,4 +717,23 @@ ul.rb li .timestamp {
   white-space: nowrap;
   position: absolute;
 }
+
+.menu-link img {
+	top: 20px;
+	right: 150px;
+}
+
+@media only screen and (max-width: 600px) {
+	.menu-link img {
+		top: 20px;
+		right: 30px;
+	}
+	.page-banner span {
+		font-size: 11vw;
+	}
+	.rb-container ul.rb li {
+		margin-left: 0px;
+	}
+}
+
 
